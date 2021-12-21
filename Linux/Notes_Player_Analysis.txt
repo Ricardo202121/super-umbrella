@@ -1,0 +1,12 @@
+Time/Date: 03/10 at 5:00 a.m  8:00 a.m  2:00 p.m 8:00 p.m 11:00 p.m
+           03/12 at 5:00 a.m  8:00 a.m  2:00 p.m 8:00 p.m 11:00 p.m
+           03/15 at 5:00 a.m  8:00 a.m  2:00 p.m  
+
+
+The player that was playing during losses each of those times was Mylie Schmidt
+
+The total count of times this player was playing was 19  
+
+          
+               
+sysadmin@UbuntuDesktop:~/Lucky_Duck_Investigations/Roulette_Loss_Investigation/Player_Dealer_Correlation$ 
