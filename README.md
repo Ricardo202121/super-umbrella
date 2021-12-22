@@ -93,10 +93,34 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the Ansible file to /etc/ansible.
-- Update the _____ file to include...
+- Update the hosts file to include the IP of the webservers.
 - Run the playbook, and navigate to http://20.127.143.116:5601/app/kibana#/home to check that the installation worked as expected.
 
 
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+To make the playbook, we used the command nano filebeat-playbook.yml and edited it to do the follwing:
+- Download filebeat .deb file
+- Install filebeat .deb
+- Drop in /etc/filebeat/filebeat.yml
+- Enable and Configure System Module
+- Setup filebeat
+- Start filebeat service
+- Enable service filebeat on boot
+
+We then ran the playbook using the command: ansible-playbook filebeat.yml
+
+To make the metricbeat playbook, we used the command nano metricbeat-playbook.yml and edited it to do the following:
+- Install metricbeat
+- Dropped in /etc/metricbeat/metricbeat.yml
+- Enable and configure docker module for metric beat
+- Setup metric beat
+- Start metric beat
+- Enable service metricbeat on boot
+
+We then ran the playbook using the command: ansible-playbook metricbeat.yml
+
+We then navigated to http://[your.VM.IP]:5601/app/kibana and this was the result:
+
+![kibana1](https://user-images.githubusercontent.com/90219947/147156212-a217867e-7372-40f9-944d-e6a099c915bf.PNG)
+
